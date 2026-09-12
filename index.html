@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jelajah Luar Angkasa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">🚀 Space Explorer</div>
+
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#planet">Planet</a>
+            <a href="#fakta">Fakta</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="small-title">🌌 SELAMAT DATANG</p>
+
+            <h1>Jelajah<br><span>Luar Angkasa</span></h1>
+
+            <p>
+                Temukan planet, bintang, fakta menarik,
+                dan berbagai misteri yang ada di alam semesta.
+            </p>
+
+            <a href="#planet" class="explore-btn">
+                🚀 Mulai Menjelajah
+            </a>
+        </div>
+
+        <div class="planet-decoration">
+            🪐
+        </div>
+
+    </section>
+
+
+    <!-- PLANET -->
+    <section id="planet" class="section">
+
+        <div class="section-title">
+            <p>🌎 TATA SURYA</p>
+            <h2>Jelajahi Planet</h2>
+            <span>Pilih planet untuk melihat informasi lengkapnya.</span>
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            🔎
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari planet..."
+            >
+        </div>
+
+
+        <!-- PLANET LIST -->
+        <div id="planetContainer" class="planet-grid"></div>
+
+    </section>
+
+
+    <!-- DETAIL PLANET -->
+    <div id="planetModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="closeModal()">×</button>
+
+            <div id="modalPlanet"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FAKTA -->
+    <section id="fakta" class="section facts-section">
+
+        <div class="section-title">
+            <p>✨ TAHUKAH KAMU?</p>
+            <h2>Fakta Luar Angkasa</h2>
+        </div>
+
+        <div class="facts-grid">
+
+            <div class="fact-card">
+                <div>🌞</div>
+                <h3>Matahari</h3>
+                <p>
+                    Matahari merupakan bintang yang menjadi pusat
+                    Tata Surya kita.
+                </p>
+            </div>
+
+            <div class="fact-card">
+                <div>🌍</div>
+                <h3>Bumi</h3>
+                <p>
+                    Bumi adalah satu-satunya planet yang diketahui
+                    memiliki kehidupan.
+                </p>
+            </div>
+
+            <div class="fact-card">
+                <div>💫</div>
+                <h3>Bintang</h3>
+                <p>
+                    Bintang adalah objek luar angkasa yang
+                    menghasilkan cahaya dan energinya sendiri.
+                </p>
+            </div>
+
+            <div class="fact-card">
+                <div>🌌</div>
+                <h3>Galaksi</h3>
+                <p>
+                    Galaksi Bima Sakti diperkirakan memiliki
+                    ratusan miliar bintang.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quiz" class="section quiz-section">
+
+        <div class="section-title">
+            <p>🧠 UJI PENGETAHUAN</p>
+            <h2>Quiz Luar Angkasa</h2>
+            <span>Seberapa banyak yang kamu ketahui tentang luar angkasa?</span>
+        </div>
+
+
+        <div class="quiz-box">
+
+            <div id="quizContent">
+
+                <h3 id="question"></h3>
+
+                <div id="answers"></div>
+
+                <button id="nextBtn" onclick="nextQuestion()">
+                    Soal Berikutnya →
+                </button>
+
+            </div>
+
+            <div id="quizResult" class="quiz-result"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🚀 Space Explorer</h3>
+
+        <p>
+            Jelajahi alam semesta dari layar kamu.
+        </p>
+
+        <p class="copyright">
+            © 2026 Space Explorer
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
